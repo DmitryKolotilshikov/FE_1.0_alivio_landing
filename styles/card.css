@@ -26,11 +26,11 @@
     opacity: .3;
 }
 
-.title--second-content:before {
+.card__title--second:before {
     content: "02";
 }
 
-.title--third-content:before {
+.card__title--third:before {
     content: "03";
     left: -115px;
 }
@@ -53,10 +53,10 @@
     .card__title:before {
         left: -80px;
     }
-    .title--second-content:before {
+    .card__title--second:before {
         left: -35px;
     }
-    .title--third-content:before {
+    .card__title--third:before {
         left: -110px;
     }
 }
