@@ -12,9 +12,7 @@
     height: 18px;
     cursor: pointer;
     display: none;
-}
-
-.logo {
+    flex-shrink: 0;
 }
 
 .header__nav {
@@ -80,10 +78,13 @@
 }
 
 @media (max-width: 480px) {
+    .header__wrapper {
+        padding: 0 10px;
+    }
     .btn--trial {
-        width: 100px;
+        width: 110px;
     }
     .btn--signin {
-        width: 70px;
+        width: 80px;
     }
 }
