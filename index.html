@@ -17,10 +17,6 @@
     <header class="header" aria-label="header">
         <div class="container">
             <div class="header__wrapper">
-                <svg class="header__burger" aria-label="burger">
-                    <use href="Assets/sprites.svg#burger"></use>
-                </svg>
-
                 <svg viewBox="0 0 81 24" class="logo" aria-label="alivio logo">
                     <use href="Assets/sprites.svg#logo"></use>
                 </svg>
@@ -28,16 +24,16 @@
                 <nav class="header__nav" aria-label="navigation links">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Why Alivio</a>
+                            <a href="#why" class="header__nav-link">Why Alivio</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Solutions</a>
+                            <a href="#solutions" class="header__nav-link">Solutions</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Community</a>
+                            <a href="#community" class="header__nav-link">Community</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Pricing</a>
+                            <a href="#pricing" class="header__nav-link">Pricing</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,6 +45,39 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="checkbox" aria-label="open-close mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger icon">
+                <use href="Assets/sprites.svg#burger"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="checkbox" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+            <ul class="mobile-navigation__list">
+                <li class="mobile__navigation-item">
+                    <a href="#why" onclick="window.location.reload(true);" class="mobile-navigation__link">Why Alivio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#solutions" onclick="window.location.reload(true);" class="mobile-navigation__link">Solutions</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#community" onclick="window.location.reload(true);" onclick="window.location.reload(true);" class="mobile-navigation__link">Community</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#pricing" onclick="window.location.reload(true);" class="mobile-navigation__link">Pricing</a>
+                </li>
+            </ul>
+
+            <label for="checkbox" class="mobile-navigation__close" aria-label="close mobile navigation menu">
+                <svg class="mobile-navigation__cross" aria-label="cross icon">
+                    <use href="Assets/sprites.svg#cross"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
 
     <main class="main" aria-label="main content">
         <section class="hero" aria-label="hero section">
@@ -66,7 +95,7 @@
             </div>
         </section>
 
-        <section class="about" aria-label="about section">
+        <section class="about" aria-label="about section" id="why">
             <div class="container">
                 <div class="about__wrapper">
                     <h2 class="about__title">How it works</h2>
@@ -114,7 +143,7 @@
             </div>
         </section>
 
-        <section class="solutions" aria-label="solutions section">
+        <section class="solutions" aria-label="solutions section" id="solutions">
             <div class="container">
                 <div class="solutions__wrapper">
                     <div class="solutions__content">
@@ -134,7 +163,7 @@
             </div>
         </section>
 
-        <section class="community" aria-label="community section">
+        <section class="community" aria-label="community section" id="community">
             <div class="container">
                 <div class="community__wrapper">
                     <figure class="product" aria-label="product">
@@ -181,7 +210,7 @@
         </section>
     </main>
 
-    <footer class="pricing" aria-label="pricing section">
+    <footer class="pricing" aria-label="pricing section" id="pricing">
         <div class="container">
             <div class="pricing__content" aria-label="pricing content">
                 <h2 class="pricing__title">Alivio</h2>

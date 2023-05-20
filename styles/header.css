@@ -7,14 +7,6 @@
     padding: 0 15px;
 }
 
-.header__burger {
-    width: 33px;
-    height: 18px;
-    cursor: pointer;
-    display: none;
-    flex-shrink: 0;
-}
-
 .header__nav {
 }
 
@@ -66,8 +58,8 @@
         justify-content: start;
         column-gap: 15px;
     }
-    .header__burger {
-        display: block;
+    .header__wrapper .logo {
+        margin-left: 45px;
     }
     .header__nav {
         display: none;
